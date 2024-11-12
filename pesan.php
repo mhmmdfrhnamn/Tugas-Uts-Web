@@ -12,7 +12,14 @@ if (!empty($email) && !empty($pesan)){
         $body = "Nama: $nama\n\nEmail: $email\n\nTelepon: $telepon\n\nLokasi: $lokasi\n\nPesan:\n$pesan\n\nSalam,\n$nama";
         $header = "From: $email";
 
-        
-
+        if (mail($penerima, $subjek, $body, $header)) {
+            echo "Pesan Kamu Berhasil Dikirim..";
+        } else {
+            echo "Maaf, Pesanmu Gagal Dikirim";
+        }
+    } else {
+        echo "Masukkan Email yang Valid";
     }
+} else {
+    echo "Email dan pesan harus di isi";
 }
