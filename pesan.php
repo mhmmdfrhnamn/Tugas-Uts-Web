@@ -6,5 +6,7 @@ $lokasi = $_POST['lokasi'] ?? '';
 $pesan = $_POST['pesan'] ?? '';
 
 if (!empty($email) && !empty($pesan)){
-    
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        
+    }
 }
