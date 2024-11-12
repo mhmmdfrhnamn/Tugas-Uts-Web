@@ -136,3 +136,36 @@ form .button-area {
     margin-left: 25px;
     display: none;
 }
+
+@media(max-width: 570px) {
+    .wrapper header{
+        text-align: center;
+    }
+}
+
+form .dbl-field {
+    margin-bottom: 0px;
+    flex-direction: column;
+}
+
+.dbl-field .field {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form .message textarea {
+    flex-direction: column;
+}
+
+form .button-area {
+    flex-direction: column;
+}
+
+.button-area button {
+    width: 100%;
+}
+
+.buttom-area span {
+    text-align: center;
+    margin: 20px;
+}
