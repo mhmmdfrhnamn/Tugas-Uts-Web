@@ -10,12 +10,44 @@
 </head>
 <body>
     <div class="wrapper">
+        <!-- Header Dan Form -->
         <header>Kirim Kami Pesan</header>
         <form action="pesan.php" method="post">
+            <div class="dbl-field">
+                <div class="field">
+                    <input type="text" name="nama" placeholder="Masukkan Nama Kamu">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="field">
+                    <input type="text" name="email" placeholder="Masukkan Email Kamu">
+                    <i class="fas fa-envelope"></i>
+                </div>
+            </div>
+            <div class="dbl-field">
+                <div class="field">
+                    <input type="text" name="telepon" placeholder="Masukkan Nomor Kamu">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="field">
+                    <input type="text" name="lokasi" placeholder="Masukkan Lokasi Kamu">
+                    <i class="fas fa-location"></i>
+                </div>
+            </div>
+            <!-- Header Dan Form End -->
 
+            <!-- Text Area dan Button-->
+            <div class="message">
+                <textarea name="pesa" id="" placeholder="Tulis Pesanmu Disini"></textarea>
+                <i class="material-icons">message</i>
+            </div>
+            <div class="button-area">
+                <button type="submit">Kirim Pesan</button>
+                <span>Mengirim Pesanmu ...</span>
+            </div>
+            <!-- Text Area dan Button -->
         </form>
-        <script src="main.js"></script>
-
     </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
